@@ -1,0 +1,7 @@
+{
+  "name": "manejoApis",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

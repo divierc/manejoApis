@@ -1,0 +1,34 @@
+<ion-header slot="primary">
+    <ion-toolbar>
+        <ion-title>
+            Tab Two
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content slot="secundary">
+    <ion-card>
+        <ion-card-content>
+            <ion-title class="ion-title">
+                Paises
+            </ion-title>
+        </ion-card-content>
+        <ion-card-content class="contenido" *ngFor="let pais of paises">
+            <ion-item slot="start">
+                <ion-img [src]="pais.flag"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-card-subtitle>Nombre:</ion-card-subtitle>
+                <ion-label color="secundary"> {{pais.name}} </ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-card-subtitle>Capital: </ion-card-subtitle>
+                <ion-label> {{pais.capital}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-card-subtitle>Población: </ion-card-subtitle>
+                <ion-label> {{pais.population}}</ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
